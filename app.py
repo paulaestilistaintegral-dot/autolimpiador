@@ -22,7 +22,7 @@ if archivo:
     st.write("Para procesar y descargar tu lista completa, realiza el pago de $5 USD.")
     
     # Botón que lleva al cliente a pagar en Stripe (Seguridad Total)
-    st.markdown("[👉 CLIC AQUÍ PARA PAGAR $5 USD](https://tu-link-de-stripe.com)")
+    st.markdown("[👉 CLIC AQUÍ PARA PAGAR $5 USD](https://estilistaintegral.gumroad.com/l/rmxfm)")
 
     # 4. VALIDACIÓN DE SEGURIDAD
     # Solo después de pagar, el cliente recibe una clave (ejemplo: 'PAGO123')
@@ -41,4 +41,5 @@ if archivo:
             st.download_button("📥 Descargar Archivo Final", data=csv, file_name="lista_limpia.csv")
     else:
         if clave_cliente:
+
             st.error("❌ Código incorrecto o expirado.")
